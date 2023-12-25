@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Rubik+Doodle+Shadow&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #FF0000;
+}
+
+
+.navbar {
+    background-color: rgba(143, 9, 9, 0.8);
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.navbar > a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar > a::after{
+    background-color: #fff;
+    bottom: -10px;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    transition: 0.5s;
+    width: 0;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+
+.hero {
+    background-image: url(assets/IMG_0009.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-text {
+    font-family: 'Lobster Two', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 300px;
+    text-align: center;
+    
+}
+
+.about-section{
+    background-image: linear-gradient(purple, red), url("assets/gradient-frame-template-christmas-season-celebration/9780638.jpg");
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    padding: 80px 30px 80px 30px;
+}
+
+.about-section > div{
+    
+    padding: 20px;
+    width: 50%;
+}
+
+.about-section > div h2{
+    color: #d6afaf;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Lobster Two', sans-serif;
+    margin-bottom: 20px;
+}
+
+.about-section > div p{
+    color: #fff;
+    font-weight: bold;
+}
+
+.gallery-section {
+    background-image: linear-gradient(to top right, red, yellow);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.gallery-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img{
+    background-image: url(assets/merry-christmas-background-with-realistic-christmas-decoration/4_christmas_Mesa_de_trabajo_1.jpg);
+    background-size: contain;
+    border-radius: 25%;
+    margin: 30px;
+    padding: 30px;
+    width: 200px;
+}
